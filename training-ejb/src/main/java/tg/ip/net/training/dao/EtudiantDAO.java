@@ -18,7 +18,7 @@ import tg.ip.net.training.idao.EtudiantIDAO;
  * @author delaCruz
  */
 @Stateless
-public class EtudiantDAO{
+public class EtudiantDAO {
 
     @PersistenceContext(unitName = "tg.ip.net_training-web_war_1.0PU")
     private EntityManager em;

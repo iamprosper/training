@@ -7,6 +7,7 @@ package tg.ip.net.training.idao;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.ejb.Local;
 
 /**
  *
@@ -14,6 +15,7 @@ import java.util.List;
  * @param <T>
  * @param <PK>
  */
+@Local
 public interface EtudiantIDAO<T extends Object, PK extends Serializable> extends IDAO<T, PK> {
     public T chercherUn(PK id);
     public List<T> lister();

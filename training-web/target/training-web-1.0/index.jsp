@@ -14,9 +14,5 @@
     </head>
     <body>
         <h1>Hello Etudiant</h1>
-        
-        <%
-            out.println(request.getAttribute("listEtudiants"));
-        %>
     </body>
 </html>

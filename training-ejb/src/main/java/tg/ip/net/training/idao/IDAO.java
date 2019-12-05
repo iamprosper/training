@@ -6,6 +6,7 @@
 package tg.ip.net.training.idao;
 
 import java.io.Serializable;
+import javax.ejb.Local;
 
 /**
  *
@@ -13,6 +14,7 @@ import java.io.Serializable;
  * @param <T>
  * @param <PK>
  */
+@Local
 public interface IDAO<T extends Object, PK extends Serializable>{
     
     public Boolean ajouter(T t);
