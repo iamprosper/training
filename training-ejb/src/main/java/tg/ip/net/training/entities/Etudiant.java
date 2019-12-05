@@ -30,9 +30,9 @@ public class Etudiant implements Serializable {
     
     private String nom;
     
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "filiere_id", nullable = false)
-//    private Filiere filiere;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "filiere_id", nullable = false)
+    private Filiere filiere;
 
     public Long getId() {
         return id;

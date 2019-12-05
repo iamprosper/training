@@ -19,7 +19,7 @@ import tg.ip.net.training.idao.IDAO;
 public class DAO<T extends Object, PK extends Serializable> implements IDAO<T, PK>{
 
     @PersistenceContext(unitName = "tg.ip.net_training-web_war_1.0PU")
-    private EntityManager em;
+    protected EntityManager em;
     
     private Class<T> entity;
     

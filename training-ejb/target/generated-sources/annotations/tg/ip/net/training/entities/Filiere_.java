@@ -1,6 +1,7 @@
 package tg.ip.net.training.entities;
 
 import javax.annotation.Generated;
+import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
@@ -10,6 +11,7 @@ public abstract class Filiere_ {
 
 	public static volatile SingularAttribute<Filiere, Long> id;
 	public static volatile SingularAttribute<Filiere, String> nom;
+	public static volatile ListAttribute<Filiere, Etudiant> listEtudiants;
 
 }
 

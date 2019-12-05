@@ -16,7 +16,7 @@ import javax.ejb.Local;
  * @param <PK>
  */
 @Local
-public interface EtudiantIDAO<T extends Object, PK extends Serializable> extends IDAO<T, PK> {
+public interface EtudiantIDAO<T extends Object, PK extends Serializable>{
     public T chercherUn(PK id);
     public List<T> lister();
 }

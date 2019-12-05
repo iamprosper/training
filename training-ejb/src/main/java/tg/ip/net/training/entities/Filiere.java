@@ -6,6 +6,7 @@
 package tg.ip.net.training.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -13,12 +14,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import lombok.Data;
 
 /**
  *
  * @author delaCruz
  */
 @Entity
+@Data
 public class Filiere implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -28,8 +31,12 @@ public class Filiere implements Serializable {
     
     private String nom;
     
-//    @OneToMany(mappedBy = "filiere", cascade = CascadeType.ALL)
-//    private List<Etudiant> listEtudiants ;
+    @OneToMany(mappedBy = "filiere", cascade = CascadeType.ALL)
+    private List<Etudiant> listEtudiants ;
+    
+    public Filiere(){
+        this.listEtudiants = new ArrayList<>();
+    }
 
     public Long getId() {
         return id;

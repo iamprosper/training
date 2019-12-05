@@ -31,7 +31,7 @@ public class EtudiantController extends HttpServlet {
         
         etudiantDAO.ajouter(etudiant);
         
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        req.getRequestDispatcher("etudiant\\add.jsp").forward(req, resp);
     }
     
 
